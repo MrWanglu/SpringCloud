@@ -1,0 +1,26 @@
+server:
+  port: 8001
+
+
+spring:
+  application:
+    name: microservicecloud-user
+  datasource:
+   driver-class-name: com.mysql.jdbc.Driver
+   url: jdbc:mysql://localhost:3306/cloud01?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+   username: root
+   password: wanglu
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: microservicecloud-user8001
+    prefer-ip-address: true
+info:
+  app.name: SpringCloud2018
+  conpany.name: www.wanglu.com
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}

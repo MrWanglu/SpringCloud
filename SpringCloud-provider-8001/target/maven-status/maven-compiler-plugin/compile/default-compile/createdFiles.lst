@@ -1,0 +1,5 @@
+zwjk\cloud\controller\UserController.class
+zwjk\cloud\dao\UserDao.class
+zwjk\cloud\service\UserService.class
+zwjk\cloud\UserProvider8001_App.class
+zwjk\cloud\serviceimpl\UserServiceImpl.class
